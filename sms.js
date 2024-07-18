@@ -22,9 +22,9 @@ function displayStudent(student) {
     } else {
       document.getElementById('message').style.display = 'block';
     }
-  }
+}
   
-  function searchStudent(name, studentClass) {
+function searchStudent(name, studentClass) {
     fetch('sms.json')
       .then(response => response.json())
       .then(data => {
@@ -36,11 +36,28 @@ function displayStudent(student) {
         displayStudent(student);
       })
       .catch(error => console.error('Error fetching student data:', error));
-  }
+}
   
-  document.getElementById('search-button').addEventListener('click', () => {
+document.getElementById('search-button').addEventListener('click', () => {
     const name = document.getElementById('search-name').value;
     const studentClass = document.getElementById('search-class').value;
     searchStudent(name, studentClass);
-  });
-  
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
