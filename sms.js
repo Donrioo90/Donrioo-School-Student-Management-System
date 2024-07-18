@@ -61,3 +61,42 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+// sms.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved theme in local storage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    // Existing JavaScript code for IntersectionObserver
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});

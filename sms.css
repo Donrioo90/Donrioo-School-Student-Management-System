@@ -3,10 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #c9c5c5;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure full viewport height */
+    min-height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   header {
@@ -91,7 +94,7 @@ body {
   }
   
   .search-container button:hover {
-    background-color: #555;
+    background-color: #3414a7;
   }
   
   .student-container {
@@ -171,3 +174,21 @@ body {
   .footer-section p {
    
   }  
+  /* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #0c0a0a; /* Color of the font in the body turns to black when in dark mode */
+    
+}
+
+header.dark-mode {
+    background-color: #555;
+}
+
+nav ul li a.dark-mode {
+    color: #ffd700; /* Gold color on hover */
+}
+
+footer.dark-mode {
+    background-color: #555;
+}
