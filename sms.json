@@ -1,0 +1,95 @@
+{
+    "students": [
+      {
+        "id": "1",
+        "name": "Peter Salasya",
+        "class": "4A",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 27000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/5f/87/af/5f87af92719842299f6e2fbd77b03aac.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Arnold Muya",
+        "class": "4B",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 35000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/58/50/b4/5850b491a6f855ae33d74f4d00ffda4a.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Nonzie Mkora",
+        "class": "4C",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 42000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/0e/99/78/0e99787a52395016e74af907d64bdff9.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Annie Mwenda",
+        "class": "4A",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 10000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/e8/9d/02/e89d0230a238508556f064a80e946fa2.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Cecil Adhis",
+        "class": "4C",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 22000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/ee/01/66/ee016604c99bc51a8b33564a25ae9a15.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Rayan Murua",
+        "class": "4B",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 16000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/1a/5e/18/1a5e1825eb05eace9e35938efd3297f5.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Steve Ogola",
+        "class": "4C",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 90000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/39/46/b6/3946b625c5b710482ad3dec85437d4c3.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Gym Kirui",
+        "class": "4A",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 9000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/2e/f4/85/2ef485b91354483bd0bd6b11142bc8b7.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Stella Wanga",
+        "class": "4A",
+        "grade": 75,
+        "class_attendance": "78%",
+        "fees_paid": 34000,
+        "health_information": "Healthy.",
+        "image": "https://i.pinimg.com/564x/10/61/53/106153eb4bbf98100c764207586253b2.jpg"
+      }
+    ]
+  }
+  

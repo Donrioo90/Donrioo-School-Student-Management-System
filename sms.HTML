@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data</title>
+  <link rel="stylesheet" href="sms.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Donrioo School</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-name" placeholder="Enter student name">
+        <input type="text" id="search-class" placeholder="Enter class">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="student-container" class="student-container">
+        <img id="student-image" src="" alt="Student Image" style="display: none;">
+        <div id="student-details" class="student-details" style="display: none;">
+            <p id="student-name"></p>
+            <p id="student-class"></p>
+            <p id="student-other-details"></p>
+        </div>
+    </div>
+    <p id="message" style="display: none;">Student not found</p>
+
+    <script src="sms.js"></script>
+  
+    <main>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>Welcome to Donrioo School Management System. We are dedicated to providing excellent education management solutions.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>You can reach us at contact@donriooschool.com or call us at (123) 456-7890.</p>
+        </section>
+        <section id="courses">
+            <h1>Courses</h1>
+            <p>We offer a variety of courses to cater to different learning needs.</p>
+        </section>
+    </main>
+</body>
+</html>
