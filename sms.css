@@ -13,7 +13,7 @@ body {
   }
   
   header {
-    background-color: #333;
+    background-color: #996a6a;
     color: #fff;
     display: flex;
     align-items: center;
@@ -127,12 +127,13 @@ body {
   section {
     margin-bottom: 20px;
     padding: 70px;
-    background-color: #fff;
+    font-size: large;
+    background-color: #b67878;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateX(-100px); /* Slide in from left */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
   }
   
   section.visible {
@@ -142,6 +143,7 @@ body {
   
   h1 {
     margin-top: 0;
+    font-size: 300%
   }
   
   p {
@@ -149,11 +151,12 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #a86b6b;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin-top: auto; /* Push to bottom */
+    margin-top: auto; /* For pushing to the bottom */
+    font-size: x-large;
   }
   
   .footer-container {
