@@ -1,6 +1,7 @@
+//displays the student's details in the designated container. If the student is not found, it shows a "Student not found" message.
 function displayStudent(student) {
     const studentContainer = document.getElementById('student-container');
-    studentContainer.innerHTML = ''; // Clear previous result
+    studentContainer.innerHTML = ''; 
 
     if (student) {
         const studentCard = document.createElement('div');
@@ -23,7 +24,7 @@ function displayStudent(student) {
         document.getElementById('message').style.display = 'block';
     }
 }
-
+//This function fetches student data from a JSON file (sms.json), searches for a student by name and class, and calls displayStudent(student) to display the result.
 function searchStudent(name, studentClass) {
     fetch('sms.json')
         .then(response => response.json())
@@ -37,13 +38,13 @@ function searchStudent(name, studentClass) {
         })
         .catch(error => console.error('Error fetching student data:', error));
 }
-
+//Adds a click event listener to the search button to trigger the searchStudent 
 document.getElementById('search-button').addEventListener('click', () => {
     const name = document.getElementById('search-name').value;
     const studentClass = document.getElementById('search-class').value;
     searchStudent(name, studentClass);
 });
-
+//This function makes sections visible when they come into the viewport
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
 
@@ -61,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // Theme Toggle
+    // Adding the dark mode toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Check for saved theme in local storage
+    
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');

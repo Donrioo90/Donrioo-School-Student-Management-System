@@ -1,17 +1,17 @@
-/* Reset and base styles */
+/* Sets background colors and styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #c9c5c5;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     min-height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
+/* For setting up the color and styles of the header */
 header {
     background-color: #996a6a;
     color: #fff;
@@ -33,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* Styles the link with white color */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -46,7 +46,7 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #333;/* black color on background */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
@@ -149,7 +149,7 @@ h1 {
 p {
     line-height: 1.6;
 }
-
+/* Styling the content on the footer */
 footer {
     background-color: #a86b6b;
     color: #fff;
